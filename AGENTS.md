@@ -24,11 +24,18 @@ It is **public**. Everything committed here is visible to anyone, forever (git h
 | Path                 | What it holds                                   |
 |----------------------|-------------------------------------------------|
 | `README.md`          | GitHub profile README                           |
-| `AGENTS.md`          | This file — rules for AI agents                 |
+| `AGENTS.md`          | This file - rules for AI agents                 |
 | `CLAUDE.md`          | Imports `AGENTS.md` for Claude Code             |
 | `.github/`           | PR template and GitHub workflows                |
 | `.markdownlint.json` | markdownlint config                             |
 | `.gitattributes`     | Line endings (LF) and binary file types         |
+| `.gitignore`         | Ignored paths                                   |
+| `.scratch/`          | Local research notes, git-ignored (see below)   |
+
+> **#2. Research and notes about the author MUST be kept in `.scratch/` and MUST NOT be committed.**
+>
+> Facts collected from other sessions, chats or the web go to `.scratch/` first. Only the final, approved text of the
+> profile or CV is committed. Never move `.scratch/` content into tracked files without explicit approval.
 
 ## 2. How to work here
 
@@ -37,7 +44,7 @@ standard: the human leads, the agent supports.
 
 > **#1. Agents MUST NOT invent facts about the author.**
 >
-> Job titles, dates, employers, numbers ("4.5M users", "reduced costs by 30%"), technologies, certificates, links —
+> Job titles, dates, employers, numbers ("4.5M users", "reduced costs by 30%"), technologies, certificates, links -
 > everything that states a fact MUST come from the author or from a source the author pointed to. If a fact is missing,
 > leave a visible `TODO(adrian): …` placeholder and ask. Polishing wording is fine; upgrading claims is not.
 
@@ -59,7 +66,11 @@ standard: the human leads, the agent supports.
 > **#5. Agents MUST verify their output.**
 >
 > Check that links resolve, Markdown renders, badges load, and the CV builds (if it has a build step). Report what
-> was checked and what was not — never claim something works without checking it.
+> was checked and what was not - never claim something works without checking it.
+
+> **#6. Text MUST use a plain hyphen `-` instead of em or en dashes (`—`, `–`).**
+>
+> This applies to the profile, the CV, documentation, commits and PRs, in English and Polish alike.
 
 ## 3. Git workflow
 
@@ -86,7 +97,7 @@ standard: the human leads, the agent supports.
 >
 > Creating local branches and commits is fine when asked to commit.
 
-## 4. Commits — Conventional Commits
+## 4. Commits - Conventional Commits
 
 _(deviation: source does not define a commit convention)_
 
@@ -134,7 +145,7 @@ _(deviation: source does not define a commit convention)_
 >
 > In this repository "breaking" means e.g. a changed URL that others may link to (CV PDF path, anchors).
 
-> **#7. Each commit SHOULD be atomic — one logical change.**
+> **#7. Each commit SHOULD be atomic - one logical change.**
 >
 > Do not mix content edits with formatting or tooling changes in one commit.
 
@@ -142,7 +153,7 @@ _(deviation: source does not define a commit convention)_
 >
 > Transparency about AI use is part of the reflective AI standard.
 
-## 5. Pull requests — Conventional PRs
+## 5. Pull requests - Conventional PRs
 
 > **#1. PR titles MUST follow the same format as commit subjects (section 4).** _(deviation: source asks for a
 > plain present-simple title)_
@@ -152,7 +163,7 @@ _(deviation: source does not define a commit convention)_
 > **#2. PR descriptions MUST use the template in [`.github/pull_request_template.md`](.github/pull_request_template.md).**
 > _(deviation: source makes the description optional)_
 >
-> Remove sections that do not apply instead of leaving them empty. Keep it short — a reviewer should understand the
+> Remove sections that do not apply instead of leaving them empty. Keep it short - a reviewer should understand the
 > change in under a minute.
 
 > **#3. A PR SHOULD contain one topic.**
@@ -165,7 +176,7 @@ _(deviation: source does not define a commit convention)_
 
 > **#6. Labels, milestones and projects SHOULD NOT be used.**
 
-## 6. Code review — Conventional Comments
+## 6. Code review - Conventional Comments
 
 > **#1. Review comments MUST use [Conventional Comments](https://conventionalcomments.org/).**
 >
@@ -182,7 +193,7 @@ _(deviation: source does not define a commit convention)_
 
 > **#2. Files MUST use LF line endings and UTF-8 encoding.**
 >
-> The author works on Windows — do not introduce CRLF.
+> The author works on Windows - do not introduce CRLF.
 
 > **#3. Lines in prose SHOULD be wrapped at 120 characters**, except tables, links and code blocks.
 
