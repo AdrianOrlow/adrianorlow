@@ -32,7 +32,7 @@ Polish for the person who gets things sorted out, _a fixer_.
 - I run an IT internship program. In 2025, 170 students in 5 cities learned automation and AI with us.
 - I'm a member of the President of Poland's Youth Council.
 - Off-screen, I shoot street photos through a swirly Soviet lens. [glitchroom](https://glitchroom.orlow.me) is where
-  photography and code meet.
+  photography and code meet. My photos are on [Instagram](https://www.instagram.com/blurredvision.png/).
 
 ## Let's connect
 
